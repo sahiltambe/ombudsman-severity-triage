@@ -1,0 +1,79 @@
+{
+  "selected": "ordered_logit",
+  "family": "ordered_logit",
+  "selection_reasoning": "one-standard-error rule with practical-equivalence floor: tolerance 0.0050 = max(1 x SE 0.0010, 0.005); 7 of 11 models score within it of the best (stacked, qwk=0.9559); ordered_logit is the simplest of them (qwk=0.9538, complexity 2 vs 7)",
+  "params": {},
+  "cv": {
+    "qwk": 0.953809,
+    "mae": 0.203333,
+    "macro_f1": 0.792915,
+    "severe_recall": 0.934178,
+    "severe_precision": 0.922055
+  },
+  "holdout_argmax": {
+    "qwk": 0.956712959751377,
+    "mae": 0.19,
+    "macro_f1": 0.8156787900442115,
+    "balanced_accuracy": 0.8279323204615223,
+    "accuracy": 0.8125,
+    "exact_or_adjacent": 0.9975,
+    "severe_recall": 0.95,
+    "severe_precision": 0.912,
+    "severe_f1": 0.9306122448979591,
+    "severe_missed": 6.0,
+    "non_severe_progressed": 11.0,
+    "recall_1": 0.9306930693069307,
+    "recall_2": 0.7653061224489796,
+    "recall_3": 0.7283950617283951,
+    "recall_4": 0.7627118644067796,
+    "recall_5": 0.7804878048780488,
+    "recall_6": 1.0,
+    "severe_roc_auc": 0.9943154761904762,
+    "severe_pr_auc": 0.9870467028782122,
+    "severe_brier": 0.02954028627606651,
+    "log_loss": 0.45956569632420136
+  },
+  "holdout_cost_aware": {
+    "qwk": 0.9519604765739085,
+    "mae": 0.215,
+    "macro_f1": 0.7915716471870686,
+    "balanced_accuracy": 0.8111924167159689,
+    "accuracy": 0.7875,
+    "exact_or_adjacent": 0.9975,
+    "severe_recall": 0.9916666666666667,
+    "severe_precision": 0.8206896551724138,
+    "severe_f1": 0.8981132075471698,
+    "severe_missed": 1.0,
+    "non_severe_progressed": 26.0,
+    "recall_1": 0.9306930693069307,
+    "recall_2": 0.7653061224489796,
+    "recall_3": 0.5432098765432098,
+    "recall_4": 0.847457627118644,
+    "recall_5": 0.7804878048780488,
+    "recall_6": 1.0,
+    "severe_roc_auc": 0.9943154761904762,
+    "severe_pr_auc": 0.9870467028782122,
+    "severe_brier": 0.02954028627606651,
+    "log_loss": 0.45956569632420136
+  },
+  "operating_point": {
+    "cost_ratio": 5.0,
+    "threshold": 0.17,
+    "severe_recall": 0.9854469854469855,
+    "severe_precision": 0.8359788359788359,
+    "progressed_share": 0.354375,
+    "expected_cost_per_case": 0.08
+  },
+  "calibration": [
+    {
+      "variant": "uncalibrated",
+      "severe_brier": 0.02954028627606651,
+      "log_loss": 0.45956569632420136
+    },
+    {
+      "variant": "isotonic",
+      "severe_brier": 0.029359643476108394,
+      "log_loss": 0.5276012013811726
+    }
+  ]
+}

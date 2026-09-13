@@ -1,0 +1,3 @@
+variant,cv_qwk_mean,cv_qwk_std,n_constrained_features
+unconstrained,0.949021,0.00485334,23
+monotone_constrained,0.94944,0.00395738,23

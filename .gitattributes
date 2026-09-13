@@ -1,0 +1,10 @@
+# Normalise line endings so the repository is identical on Windows, macOS and Linux.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary artefacts
+*.xlsx binary
+*.joblib binary
+*.png binary
+*.parquet binary

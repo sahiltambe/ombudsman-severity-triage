@@ -1,0 +1,3 @@
+rule,qwk,macro_f1,severe_recall,severe_precision,severe_missed,non_severe_progressed
+argmax (threshold 0.5-equivalent),0.956713,0.815679,0.95,0.912,6,11
+cost-optimal threshold 0.17 (FN:FP 5:1),0.95196,0.791572,0.991667,0.82069,1,26

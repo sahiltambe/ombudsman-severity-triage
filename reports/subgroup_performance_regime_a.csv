@@ -1,0 +1,21 @@
+column,level,n,severe_rate,severe_recall,severe_precision,qwk
+Jurisdiction,Health,246,0.317073,0.987179,0.846154,0.961135
+Jurisdiction,Parliamentary,135,0.281481,1,0.791667,0.945198
+AgeBand,18-34,73,0.273973,0.95,0.863636,0.932036
+AgeBand,35-49,93,0.333333,1,0.815789,0.936956
+AgeBand,50-64,94,0.297872,1,0.8,0.960044
+AgeBand,65-79,75,0.24,1,0.857143,0.973802
+AgeBand,80+,51,0.333333,1,0.772727,0.95426
+PrimaryVulnerability,(missing),20,0.2,1,0.8,0.942611
+PrimaryVulnerability,Caring Responsibilities,37,0.297297,1,0.916667,0.962694
+PrimaryVulnerability,Financial Hardship,46,0.369565,1,0.85,0.943459
+PrimaryVulnerability,Homelessness,23,0.0869565,1,0.333333,0.897474
+PrimaryVulnerability,Learning Disability,38,0.526316,1,0.909091,0.951213
+PrimaryVulnerability,Mental Health,76,0.289474,1,0.758621,0.930604
+PrimaryVulnerability,None,67,0.134328,1,0.818182,0.954484
+PrimaryVulnerability,Physical Health,93,0.376344,0.971429,0.85,0.955494
+OrganisationType,Agency,43,0.27907,1,0.8,0.927768
+OrganisationType,GP Practice,64,0.3125,1,0.769231,0.942543
+OrganisationType,Government Department,75,0.28,1,0.875,0.957841
+OrganisationType,Integrated Care Board,50,0.2,1,0.833333,0.956044
+OrganisationType,NHS Trust,140,0.357143,0.98,0.890909,0.960897

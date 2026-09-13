@@ -1,0 +1,8 @@
+,count,share
+exact,325,0.8125
+under_by_1,31,0.0775
+over_by_1,43,0.1075
+under_by_2_or_more,0,0
+over_by_2_or_more,1,0.0025
+crossed_boundary_downwards (severe -> not),6,0.015
+crossed_boundary_upwards (not -> severe),11,0.0275

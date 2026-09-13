@@ -1,0 +1,5 @@
+capacity_fraction,cases_progressed,implied_threshold,severe_recall,severe_precision,severe_missed
+0.25,100,0.929651,0.816667,0.98,22
+0.3,120,0.730611,0.941667,0.941667,7
+0.35,140,0.256025,0.975,0.835714,3
+0.4,160,0.0632921,1,0.75,0

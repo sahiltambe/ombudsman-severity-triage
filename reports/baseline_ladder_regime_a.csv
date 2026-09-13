@@ -1,0 +1,7 @@
+rung,approach,qwk,mae,macro_f1,severe_recall,severe_precision,qwk_gain_vs_previous
+0,Majority class (always predict 1),0,1.75375,0.0670657,0,0,
+1,Single-feature rule on EstimatedImpactScore,0.920188,0.313125,0.697292,0.900236,0.877183,0.9202
+2,"Logistic regression, raw columns only (44 features)",0.940636,0.26125,0.712967,0.925258,0.89255,0.0204
+3,"Logistic regression, engineered features (82 features)",0.935975,0.27875,0.697762,0.916946,0.894915,-0.0047
+4,"Ordered logit, engineered features (ordinal structure)",0.952258,0.209375,0.785024,0.927298,0.916242,0.0163
+5,"LightGBM, engineered features (non-linear)",0.949867,0.21375,0.783205,0.908527,0.932073,-0.0024

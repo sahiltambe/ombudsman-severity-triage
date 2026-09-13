@@ -1,0 +1,3 @@
+variant,severe_brier,log_loss
+uncalibrated,0.0295403,0.459566
+isotonic,0.0293596,0.527601

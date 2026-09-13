@@ -1,0 +1,4 @@
+case_type,CaseReference,true_severity,predicted_argmax,p_severe,expected_severity
+clearly_not_severe,TRN-001782,1,1,9.73914e-12,1
+clearly_severe,TRN-001862,6,6,1,5.9998
+borderline,TRN-000221,3,3,0.17119,3.16391

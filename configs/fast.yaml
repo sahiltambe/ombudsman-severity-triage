@@ -1,0 +1,12 @@
+# Faster CV/tuning for smoke runs. Same seed and model list.
+split:
+  test_size: 0.2
+  cv_folds: 5
+  cv_repeats: 1
+
+tuning:
+  enabled: true
+  n_trials: 6
+  timeout_seconds: 240
+  models:
+    - lightgbm

@@ -1,0 +1,24 @@
+Fidelity to model decisions: 0.966
+
+|--- impact_risk_mean <= 57.2
+|   |--- EstimatedImpactScore <= 55.5
+|   |   |--- ExpectedFinancialRedressGBP <= 2105.3
+|   |   |   |--- -> CLOSE (not progressed)
+|   |   |--- ExpectedFinancialRedressGBP >  2105.3
+|   |   |   |--- -> CLOSE (not progressed)
+|   |--- EstimatedImpactScore >  55.5
+|   |   |--- ExpectedFinancialRedressGBP <= 874.0
+|   |   |   |--- -> CLOSE (not progressed)
+|   |   |--- ExpectedFinancialRedressGBP >  874.0
+|   |   |   |--- -> INVESTIGATE (progressed)
+|--- impact_risk_mean >  57.2
+|   |--- EstimatedImpactScore <= 61.5
+|   |   |--- ExpectedFinancialRedressGBP <= 934.5
+|   |   |   |--- -> CLOSE (not progressed)
+|   |   |--- ExpectedFinancialRedressGBP >  934.5
+|   |   |   |--- -> INVESTIGATE (progressed)
+|   |--- EstimatedImpactScore >  61.5
+|   |   |--- ExpectedFinancialRedressGBP <= 911.7
+|   |   |   |--- -> INVESTIGATE (progressed)
+|   |   |--- ExpectedFinancialRedressGBP >  911.7
+|   |   |   |--- -> INVESTIGATE (progressed)

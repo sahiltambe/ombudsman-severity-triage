@@ -1,0 +1,4 @@
+cost_ratio,threshold,severe_recall,severe_precision,progressed_share,expected_cost_per_case
+3,0.23,0.977131,0.856102,0.343125,0.07
+5,0.17,0.985447,0.835979,0.354375,0.08
+10,0.08,0.993763,0.796667,0.375,0.095

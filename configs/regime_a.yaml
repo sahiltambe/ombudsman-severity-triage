@@ -1,0 +1,3 @@
+# Regime A: includes internal impact/risk/remedy scores (submission default).
+features:
+  regime: A

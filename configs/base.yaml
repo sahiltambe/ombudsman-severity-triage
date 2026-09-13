@@ -1,0 +1,86 @@
+# Pipeline settings. Optional files (regime_a/b, fast) override keys as needed.
+
+project:
+  name: severity-triage
+  seed: 42
+
+paths:
+  raw_workbook: data/raw/Technical Assessment.xlsx
+  checksums: data/raw/CHECKSUMS.sha256
+  processed_dir: data/processed
+  predictions_file: data/predictions/holdback_predictions.csv
+  models_dir: models
+  reports_dir: reports
+  figures_dir: reports/figures
+
+data:
+  sheets:
+    training: Training Dataset
+    holdback: Holdback Dataset
+    dictionary: Data Dictionary
+  target: SeverityScore
+  id_column: CaseReference
+  # Investigate if severity >= 4
+  progress_threshold: 4
+  # Label leak; also empty in holdback
+  leak_columns:
+    - OmbudsmanInvestigationRequired
+  # Out-of-range values -> missing (or "clip")
+  range_violation_strategy: "null"
+
+features:
+  # A = all usable features (submission). B = drop internal scores.
+  regime: A
+  internal_proxy_columns:
+    - EstimatedImpactScore
+    - EstimatedRiskScore
+    - PredictedRemedyBand
+  date_column: CaseCreatedDate
+  # Fixed so case-age features do not drift with today's date
+  reference_date: "2026-07-01"
+
+split:
+  test_size: 0.2
+  cv_folds: 5
+  cv_repeats: 3
+
+models:
+  candidates:
+    - logistic
+    - ordered_logit
+    - frank_hall
+    - regression_threshold
+    - random_forest
+    - hist_gb
+    - xgboost
+    - lightgbm
+    - stacked
+  selected: null
+  primary_metric: qwk
+  # Pick simplest model within one SE of the best (or "best")
+  selection_rule: one_se
+  selection_tolerance_se: 1.0
+  selection_min_tolerance: 0.005
+
+tuning:
+  enabled: true
+  n_trials: 40
+  timeout_seconds: 600
+  models:
+    - xgboost
+    - lightgbm
+
+decision:
+  # Brief: missing severe is worse than reviewing mild. 5:1 is our assumption.
+  fn_fp_cost_ratio: 5.0
+  sensitivity_ratios: [3.0, 5.0, 10.0]
+  capacity_fractions: [0.25, 0.30, 0.35, 0.40]
+
+robustness:
+  missingness_fractions: [0.10, 0.20, 0.30]
+  noise_scale: 0.10
+  subgroup_columns:
+    - Jurisdiction
+    - AgeBand
+    - PrimaryVulnerability
+    - OrganisationType

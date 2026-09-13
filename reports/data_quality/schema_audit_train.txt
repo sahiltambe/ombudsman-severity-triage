@@ -1,0 +1,11 @@
+Schema audit
+target present: True
+leak columns present: ['OmbudsmanInvestigationRequired']
+undocumented columns present: ['AdditionalTreatmentRequired', 'ImpactOnRelationships']
+expected but missing: none
+unexpected: none
+
+Range violations quarantined : 30
+Categorical violations       : 0
+Columns dropped              : ['OmbudsmanInvestigationRequired']
+Columns with missing values  : 23

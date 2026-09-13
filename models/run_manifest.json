@@ -1,0 +1,66 @@
+{
+  "package_version": "1.0.0",
+  "trained_at": "2026-09-13T03:07:46+00:00",
+  "git_sha": "06f103dae777838926965c03ee224e367968ca9e",
+  "python": "3.13.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "seed": 42,
+  "regime": "A",
+  "workbook_sha256": "abcadb9712df5ecffaa9aba3bdce534b38d9c67bec74f9bdfd8a78679de27cc5",
+  "n_training_rows": 2000,
+  "n_holdback_rows": 500,
+  "n_features_engineered": 82,
+  "model": {
+    "family": "ordered_logit",
+    "label": "Proportional-odds (ordered) logit",
+    "params": {}
+  },
+  "decision": {
+    "cost_ratio": 5.0,
+    "threshold": 0.19,
+    "severe_recall": 0.9883527454242929,
+    "severe_precision": 0.8425531914893617,
+    "progressed_share": 0.3525,
+    "expected_cost_per_case": 0.073,
+    "severe_from": 4
+  },
+  "cv_full_training": {
+    "qwk": 0.9556568083563651,
+    "mae": 0.19499999999999998,
+    "macro_f1": 0.8056322588291739,
+    "severe_recall": 0.9428604224058771,
+    "severe_precision": 0.9221580567723068,
+    "severe_pr_auc": 0.9860876472212164
+  },
+  "holdout": {
+    "qwk": 0.9519604765739085,
+    "mae": 0.215,
+    "macro_f1": 0.7915716471870686,
+    "severe_recall": 0.9916666666666667,
+    "severe_precision": 0.8206896551724138
+  },
+  "predictions": {
+    "file": "data/predictions/holdback_predictions.csv",
+    "sha256": "805109267b516d9b086866aad6ba36f96a8fd26f209879a0d737272ef22ec289",
+    "rows": 500,
+    "predicted_distribution": {
+      "1": 131,
+      "2": 118,
+      "3": 79,
+      "4": 100,
+      "5": 43,
+      "6": 29
+    },
+    "progressed_share": 0.344
+  },
+  "packages": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "statsmodels": "0.15.0",
+    "shap": "0.52.0",
+    "optuna": "5.0.0"
+  }
+}

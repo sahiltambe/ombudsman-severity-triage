@@ -1,0 +1,3 @@
+# Regime B: drop internal scores to measure dependence on them.
+features:
+  regime: B

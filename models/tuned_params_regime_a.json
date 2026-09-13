@@ -1,0 +1,22 @@
+{
+  "xgboost": {
+    "clf__estimator__n_estimators": 200,
+    "clf__estimator__learning_rate": 0.03724465334710854,
+    "clf__estimator__max_depth": 2,
+    "clf__estimator__min_child_weight": 3,
+    "clf__estimator__subsample": 0.696353283353434,
+    "clf__estimator__colsample_bytree": 0.9562908244447484,
+    "clf__estimator__reg_lambda": 2.064559851990401,
+    "clf__estimator__reg_alpha": 0.003906800841722908
+  },
+  "lightgbm": {
+    "clf__n_estimators": 250,
+    "clf__learning_rate": 0.017987863473362915,
+    "clf__num_leaves": 9,
+    "clf__min_child_samples": 16,
+    "clf__subsample": 0.7554709158757928,
+    "clf__colsample_bytree": 0.6356745158869479,
+    "clf__reg_lambda": 4.544383960336017,
+    "clf__reg_alpha": 0.020874681332882276
+  }
+}
